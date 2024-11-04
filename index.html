@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="chat-container" style="display: none;">
+        <h2>Chat</h2>
+        <div id="chat-history"></div>
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Type your message here..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
